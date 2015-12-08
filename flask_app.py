@@ -6,13 +6,10 @@ app = Flask(__name__)
 
 
 @app.route('/')
-@app.route('/index/')
+@app.route('/startpage/')
 
 def startpage():
-	return render_template()
+	return render_template("startpage.html")
 
 if (__name__) == "__main__":
 	app.run()
-	
-
-	
